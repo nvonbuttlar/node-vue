@@ -1,20 +1,10 @@
 <script setup>
-import { ref, onMounted } from 'vue'
-
-// reactive state
-const count = ref(0)
-
-// functions that mutate state and trigger updates
-function increment() {
-  count.value++
-}
-
-// lifecycle hooks
-onMounted(() => {
-  console.log(`The initial count is ${count.value}.`)
-})
 </script>
 
 <template>
-  <h1>Login!</h1>
+  <div>
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <input type="submit" value="Login" />
+  </div>
 </template>
