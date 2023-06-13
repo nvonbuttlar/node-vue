@@ -12,9 +12,9 @@ onMounted(() => {
     <h1>Welcome To Industry DB</h1>
     <p>Providing options for hire in a pinch</p>
     <p>Select the option which best suits you:</p>
-    <a href="">
+    <router-link to="/register">
       <div>You Represent an Organization and are Looking to Hire Industry Workers</div>
-    </a>
+    </router-link>
     <a href="">
       <div>You are a Workers Looking to Get Hired in the Industry</div>
     </a>
