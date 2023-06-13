@@ -2,6 +2,7 @@
 
 <template>
   <div id="app">
+    <Header />
     <Register />
     <Dashboard v-if="settings == true" />
   </div>
@@ -10,12 +11,14 @@
 <script>
 import Dashboard from './components/Dashboard.vue'
 import Register from './components/Register.vue'
+import Header from './components/Header.vue'
 
 export default {
   name: 'App',
   components: {
     Dashboard,
-    Register
+    Register,
+    Header
   },
   data() {
       return {

@@ -1,6 +1,6 @@
 <template>
     <div class="header">
-        KitchenDB
+        On Deck, Next Up, Rapid Fire Hire, Industry DB (IDB)
     </div>
 </template>
 
