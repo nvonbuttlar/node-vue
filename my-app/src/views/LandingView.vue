@@ -16,7 +16,7 @@ onMounted(() => {
       <div>You Represent an Organization and are Looking to Hire Industry Workers</div>
     </router-link>
     <a href="">
-      <div>You are a Workers Looking to Get Hired in the Industry</div>
+      <div>You are a Worker Looking to Get Hired in the Industry</div>
     </a>
   </div>
 </template>
