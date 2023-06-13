@@ -2,17 +2,20 @@
 
 <template>
   <div id="app">
+    <Register />
     <Dashboard v-if="settings == true" />
   </div>
 </template>
 
 <script>
 import Dashboard from './components/Dashboard.vue'
+import Register from './components/Register.vue'
 
 export default {
   name: 'App',
   components: {
-    Dashboard
+    Dashboard,
+    Register
   },
   data() {
       return {

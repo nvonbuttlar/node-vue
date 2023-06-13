@@ -1,3 +1,4 @@
+<!-- Add filtering to display users -->
 <template>
     <div class="container">
         <h2>Users</h2>
