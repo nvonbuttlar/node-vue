@@ -1,13 +1,12 @@
+<!-- Built from https://medium.com/bb-tutorials-and-thoughts/how-to-develop-and-build-vue-js-app-with-nodejs-bd86feec1a20 -->
+
 <template>
   <div id="app">
-    <Dashboard v-if="settings == true"/>
+    <Dashboard v-if="settings == true" />
   </div>
 </template>
 
 <script>
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-
 import Dashboard from './components/Dashboard.vue'
 
 export default {
@@ -31,5 +30,5 @@ export default {
 </script>
 
 <style>
-  @import './assets/styles/global.css';
+@import './assets/styles/global.css';
 </style>

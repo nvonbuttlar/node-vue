@@ -1,29 +1,47 @@
 <template>
-  <div class="container">
-    <div class="row">
-        <div class="col-md-7 mrgnbtm">
-        <h2>Create User</h2>
-            <form>
-                <div class="row">
-                    <div class="form-group col-md-6">
-                        <label htmlFor="exampleInputEmail1">First Name</label>
-                        <input type="text" class="form-control" v-model="firstName" name="firstname" id="firstname" aria-describedby="emailHelp" placeholder="First Name" />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 mrgnbtm">
+                <h2>Create Your Account</h2>
+                <form>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label htmlFor="exampleInputEmail1">First Name</label>
+                            <input type="text" class="form-control" v-model="firstName" name="firstname" id="firstname"
+                                aria-describedby="emailHelp" placeholder="First Name" required />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label htmlFor="exampleInputPassword1">Last Name</label>
+                            <input type="text" class="form-control" v-model="lastName" name="lastname" id="lastname"
+                                placeholder="Last Name" required />
+                        </div>
                     </div>
-                    <div class="form-group col-md-6">
-                        <label htmlFor="exampleInputPassword1">Last Name</label>
-                        <input type="text" class="form-control" v-model="lastName" name="lastname" id="lastname" placeholder="Last Name" />
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <label htmlFor="exampleInputEmail1">Email</label>
+                            <input type="text" class="form-control" v-model="email" name="email" id="email"
+                                aria-describedby="emailHelp" placeholder="Email" required />
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-md-12">
-                        <label htmlFor="exampleInputEmail1">Email</label>
-                        <input type="text" class="form-control" v-model="email" name="email" id="email" aria-describedby="emailHelp" placeholder="Email" />
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <label htmlFor="exampleInputEmail1">Position</label>
+                            <select type="text" class="form-control" v-model="position" name="position" id="position"
+                                aria-describedby="emailHelp" required>
+                                <option value="" disabled selected>Job Title</option>
+                                <option value="cook">Cook</option>
+                                <option value="server">Server</option>
+                                <option value="dishwasher">Dishwasher</option>
+                                <option value="host">Host/Hostess</option>
+                                <option value="bartender">Bartender</option>
+                                <option value="busser">Busser</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
-                <button type="button" @click='createUser()' class="btn btn-danger">Create</button>
-            </form>
+                    <button type="button" @click='createUser()' class="btn btn-danger">Create</button>
+                </form>
+            </div>
         </div>
-    </div>
     </div>
 </template>
 
@@ -34,7 +52,8 @@ export default {
     return {
       firstName: '',
       lastName: '',
-      email: ''
+      email: '',
+      position: ''
     }
   },
   methods: {
@@ -43,7 +62,8 @@ export default {
           const payload = {
               firstName: this.firstName,
               lastName: this.lastName,
-              email: this.email
+              email: this.email,
+              position: this.position
           }
           this.$emit('createUser', payload)
           this.clearForm();
@@ -52,6 +72,7 @@ export default {
           this.firstName = "";
           this.lastName = "";
           this.email = "";
+          this.position = "";
       }
   }
 }

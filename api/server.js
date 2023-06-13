@@ -10,19 +10,22 @@ const users = [
     id: "1",
     firstName: "first1",
     lastName: "last1",
-    email: "abc@gmail.com"
+    email: "abc@gmail.com",
+    position: "server"
   },
   {
     id: "2",
     firstName: "first2",
     lastName: "last2",
-    email: "abc@gmail.com"
+    email: "abc@gmail.com",
+    position: "busser"
   },
   {
     id: "3",
     firstName: "first3",
     lastName: "last3",
-    email: "abc@gmail.com"
+    email: "abc@gmail.com",
+    position: "cook"
   }
 ];
 
