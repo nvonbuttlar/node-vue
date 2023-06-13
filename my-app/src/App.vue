@@ -1,4 +1,4 @@
-<!-- Built from https://medium.com/bb-tutorials-and-thoughts/how-to-develop-and-build-vue-js-app-with-nodejs-bd86feec1a20 -->
+<!-- Template from https://medium.com/bb-tutorials-and-thoughts/how-to-develop-and-build-vue-js-app-with-nodejs-bd86feec1a20 -->
 
 <template>
   <div id="app">
