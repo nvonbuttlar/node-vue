@@ -3,9 +3,6 @@ import { ref, onMounted } from 'vue'
 import CreateUser from '../components/CreateUser.vue'
 import { getAllUsers, createUser } from '../services/UserService'
 
-// reactive state
-const count = ref(0)
-
 // TO DO 
 // --> Serverside validation for user input
 // --> Add User to DB if conditions are met
@@ -19,11 +16,6 @@ const userCreate = (data) =>  {
     getAllUsers();
   });
 }
-
-// lifecycle hooks
-onMounted(() => {
-  console.log(`The initial count is ${count.value}.`)
-})
 </script>
 
 <template>
