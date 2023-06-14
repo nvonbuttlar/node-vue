@@ -1,10 +1,7 @@
 <script setup>
-import { onMounted } from 'vue'
+import { defineProps } from 'vue'
+import Card from '../components/Card.vue'
 
-// lifecycle hooks
-onMounted(() => {
-  console.log(`Landing page Mounted`)
-})
 </script>
 
 <template>
@@ -12,11 +9,9 @@ onMounted(() => {
     <h1>Welcome To Industry DB</h1>
     <p>Providing options for hire in a pinch</p>
     <p>Select the option which best suits you:</p>
-    <router-link to="/register">
-      <div>You Represent an Organization and are Looking to Hire Industry Workers</div>
-    </router-link>
-    <a href="">
-      <div>You are a Worker Looking to Get Hired in the Industry</div>
-    </a>
+    <Card title="Organization" content="You represent an Oranization and are looking to Hire" btn1="Register"
+      btn1Url="/register" />
+    <Card title="Worker" content="You are ready to work and want to Connect with an Organization" btn1="Register"
+      btn1Url="/register" />
   </div>
 </template>

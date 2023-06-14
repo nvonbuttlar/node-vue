@@ -7,7 +7,9 @@
 </script>
 
 <template>
-  <Header />
+  <div class="v-app">
+    <Header />
+  </div>
 </template>
 
 <style>
