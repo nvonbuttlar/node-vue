@@ -3,19 +3,11 @@
 <!-- https://vueschool.io/articles/vuejs-tutorials/how-to-use-vue-router-a-complete-tutorial/ -->
 
 <script setup>
-  // import "@fontsource/open-sans/500.css";
+  import Header from './components/Header.vue'
 </script>
 
 <template>
-  <div>
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/register">Register</router-link> |
-      <router-link to="/login">Login</router-link>
-    </nav>
-    <router-view />
-  </div>
+  <Header />
 </template>
 
 <style>
@@ -30,7 +22,7 @@ body {
 #app {
   height: 100vh;
   text-align: center;
-  background-color: #2c3e50;
+  background-color: #1A1A1A;
 }
 
 /* h1,
@@ -57,6 +49,6 @@ a:visited {
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #53b989;
 }
 </style>

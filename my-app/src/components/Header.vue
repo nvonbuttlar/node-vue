@@ -1,12 +1,11 @@
 <template>
-    <div class="header">
-        On Deck, Next Up, Rapid Fire Hire, Industry DB (IDB)
-    </div>
+  <div class="header">
+    <nav>
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link> |
+      <router-link to="/register">Register</router-link> |
+      <router-link to="/login">Login</router-link>
+    </nav>
+    <router-view />
+  </div>
 </template>
-
-<script>
-    console.log("I am in header!!!")
-    export default {
-        name: 'Header'
-    }
-</script>
