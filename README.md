@@ -6,14 +6,13 @@
 ### Front-End
 - Vue3.js
 - PrimeVue (UI)
-- Tailwind CSS
 
 ### API 
 - Node.js
 - Express
 
 ### DataBase
-- TBD
+- MySQL
 
 ### Domain
 - TBD

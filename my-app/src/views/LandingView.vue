@@ -1,5 +1,4 @@
 <script setup>
-import { defineProps } from 'vue'
 import Card from '../components/Card.vue'
 
 </script>
@@ -17,3 +16,17 @@ import Card from '../components/Card.vue'
     </div>
   </div>
 </template>
+
+<style scoped>
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.p-card {
+  margin: 16px;
+  padding: 16px;
+  flex: 1;
+  max-width: 600px;
+}
+</style>
