@@ -1,6 +1,5 @@
 <script setup>
 import { ref, onMounted } from 'vue'
-import CreateUser from '../components/CreateUser.vue'
 import { getAllUsers, createUser } from '../services/UserService'
 
 // TO DO 
@@ -21,6 +20,6 @@ const userCreate = (data) =>  {
 <template>
   <div>
     <h1>Register</h1>
-    <CreateUser @createUser="userCreate($event)" />
+    TBD
   </div>
 </template>

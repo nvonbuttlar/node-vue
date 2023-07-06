@@ -47,7 +47,7 @@
 
 <script>
 export default {
-  name: 'CreateUser',
+  name: 'CreateWorker',
   data() {
     return {
       firstName: '',

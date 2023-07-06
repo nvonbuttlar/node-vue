@@ -10,9 +10,9 @@ import Card from '../components/Card.vue'
     <p>Select the option which best suits you:</p>
     <div class="flex">
       <Card title="Organization" content="You represent an Oranization and are looking to Hire" btn1="Register"
-        btn1Url="/register" />
+        btn1Url="/register/org" />
       <Card title="Worker" content="You are ready to work and want to Connect with an Organization" btn1="Register"
-        btn1Url="/register" />
+        btn1Url="/register/worker" />
     </div>
   </div>
 </template>

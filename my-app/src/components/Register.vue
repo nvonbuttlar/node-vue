@@ -1,6 +1,5 @@
 <script setup>
 import { ref, onMounted } from 'vue'
-import CreateUser from './CreateUser.vue'
 import { getAllUsers, createUser } from '../services/UserService'
 
 // reactive state
@@ -29,6 +28,6 @@ onMounted(() => {
 <template>
   <div>
     <h1>Register</h1>
-    <CreateUser @createUser="userCreate($event)" />
+    TBD
   </div>
 </template>
