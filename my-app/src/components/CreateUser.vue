@@ -10,12 +10,6 @@
                             <input type="text" class="form-control" v-model="firstName" name="firstname" id="firstname"
                                 aria-describedby="emailHelp" placeholder="First Name" required />
                         </div>
-                        <div class="p-inputgroup flex-1">
-                            <span class="p-inputgroup-addon">
-                                <i class="pi pi-user"></i>
-                            </span>
-                            <InputText placeholder="Username" />
-                        </div>
                         <div class="form-group col-md-6">
                             <label htmlFor="exampleInputPassword1">Last Name</label>
                             <input type="text" class="form-control" v-model="lastName" name="lastname" id="lastname"

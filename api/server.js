@@ -55,6 +55,16 @@ app.get('/api/users', (req, res) => {
   res.json(users);
 });
 
+app.get('/api/organizations', (req, res) => {
+  console.log('Get All Organizations called!!!!!!!');
+  connection.query('SELECT * FROM `organization`', function (error, results, fields) {
+    if (error) throw error;
+    console.log("result: ", results);
+
+    res.json(results);
+  });
+});
+
 app.post('/api/user', (req, res) => {
   const user = req.body.user;
   user.id = randomId(10);
@@ -71,5 +81,7 @@ app.listen(port, () => {
     console.log(`Server listening on the port::${port}`);
 });
 
-// End DB connection
-connection.end();
+// TO DO: 
+// when to properly end DB connection, currently not ending for dev purposes
+// adding routes to a different file
+// How to connect to DB for production
