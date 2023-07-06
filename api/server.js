@@ -4,6 +4,24 @@ const app = express(),
       bodyParser = require("body-parser");
       port = 3070;
 
+var mysql = require('mysql');
+var connection = mysql.createConnection({
+  host: 'localhost',
+  port: 8889,
+  user: 'root',
+  password: 'root',
+  database: 'industry'
+});
+
+connection.connect(function(err) {
+  if (err) {
+    console.error('error connecting: ' + err.stack);
+    return;
+  }
+ 
+  console.log('connected to DB!');
+});
+
 // place holder for the data
 const users = [
   {
@@ -52,3 +70,6 @@ app.get('/', (req,res) => {
 app.listen(port, () => {
     console.log(`Server listening on the port::${port}`);
 });
+
+// End DB connection
+connection.end();
