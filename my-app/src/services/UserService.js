@@ -5,7 +5,7 @@ export async function getAllUsers() {
     return response.data;
 }
 
-export async function createUser(data) {
-    const response = await axios.post(`/api/user`, {user: data});
+export async function creatWorker(data) {
+    const response = await axios.post(`/api/worker`, {user: data});
     return response.data;
 }

@@ -65,7 +65,7 @@ app.get('/api/organizations', (req, res) => {
   });
 });
 
-app.post('/api/user', (req, res) => {
+app.post('/api/worker', (req, res) => {
   const user = req.body.user;
   user.id = randomId(10);
   console.log('Adding user:::::', user);

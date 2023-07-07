@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import CreateWorker from '../components/CreateWorker.vue'
-import { getAllUsers, createUser } from '../services/UserService'
+import { getAllUsers, createWorker } from '../services/UserService'
 
 // TO DO 
 // --> Serverside validation for user input
@@ -11,7 +11,7 @@ import { getAllUsers, createUser } from '../services/UserService'
 
 const userCreate = (data) =>  {
   console.log('data:::', data)
-  createUser(data).then(response => {
+  createWorker(data).then(response => {
     console.log(response);
     getAllUsers();
   });
@@ -20,7 +20,7 @@ const userCreate = (data) =>  {
 
 <template>
   <div>
-    <h1>Register</h1>
+    <h1>Register as a Worker</h1>
     <CreateWorker @createUser="userCreate($event)" />
   </div>
 </template>
